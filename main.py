@@ -217,7 +217,7 @@ def similarity_search_with_score(query, k=1):
     return concatenated_content
 
 query = "what's you job ? "
-outlier_paragraph = similarity_search_with_score(query=query, k=5)
+outlier_paragraph = similarity_search_with_score(query=query, k=1)
 
 # Print the concatenated content
 logging.info({"concatenated_content": outlier_paragraph})
